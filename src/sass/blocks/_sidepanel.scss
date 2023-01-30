@@ -8,8 +8,12 @@
     width: 340px;
     transform: rotate(-90deg);
     z-index: 3;
-    &__img {
-        transform: rotate(90deg);
+    &__link {
+        &:hover {
+            svg path {
+                fill: $main-color;
+            }
+        }
     }
     &__divider {
         width: 70px;
