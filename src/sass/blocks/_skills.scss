@@ -1,0 +1,47 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 286px);
+        grid-template-rows: repeat(3, minmax(286px, auto));
+        grid-auto-rows: minmax(286px, auto);
+        column-gap: 40px;
+        row-gap: 40px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    &__item {
+        border: 1px solid #000000;
+        padding: 30px 30px 25px 30px;
+        &-padding {
+            padding-top: 45px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            margin-top: 20px;
+            &-mt {
+                margin-top: 34px;
+            }
+        }
+        &-descr {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 15px;
+        }
+    }
+}
