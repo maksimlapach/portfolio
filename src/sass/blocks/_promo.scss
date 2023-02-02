@@ -6,10 +6,12 @@
     &__title {
         width: 532px;
         margin-top: 10px;
+        color: #fff;
     }
     &__subtitle {
         position: relative;
         padding-left: 10px;
+        color: #fff;
         z-index: 2;
         @include before_circle;
     }
@@ -21,12 +23,12 @@
         width: 250px;
     }
     &__link {
-        color: #000;
+        color: #fff;
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
         &:hover {
-            color: #000;
+            color: #fff;
             text-decoration: none;
         }
     }

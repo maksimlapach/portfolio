@@ -18,4 +18,25 @@
     &_fz48 {
         font-size: 48px;
     }
+    &_block-title {
+        position: relative;
+        margin-top: 6px;
+        padding-left: 12px;
+        @include before_circle;
+    }
+    &_block-subtitle {
+        margin-top: 6px;
+    }
+    &_block-title-center {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &_block-subtitle-center {
+        text-align: center;
+    }
 }
