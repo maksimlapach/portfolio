@@ -12,8 +12,9 @@
     }
     &__item {
         display: grid;
-        grid-template-columns: 215px 125px;
-        grid-template-rows: 26px 18px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: minmax(26px, auto) minmax(18px, auto);
+        row-gap: 5px;
         justify-content: space-between;
         padding-left: 25px;
         &-title {
@@ -31,7 +32,7 @@
             }
         }
         &-cost {
-            text-align: end;
+            justify-self: end;
         }
         &-descr {
             font-weight: 500;

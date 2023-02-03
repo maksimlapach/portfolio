@@ -20,6 +20,9 @@
     }
     &:hover {
         height: 30px;
+        span {
+            background-color: $main-color;
+        }
     }
 }
 
