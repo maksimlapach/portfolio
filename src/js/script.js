@@ -21,7 +21,3 @@ const percents = document.querySelectorAll('.progress__item-percent'),
 percents.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
-
-const prevScrollpos = window.pageYOffset;
-
-console.log(prevScrollpos);

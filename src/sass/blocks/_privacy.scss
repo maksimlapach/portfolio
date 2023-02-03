@@ -1,0 +1,28 @@
+.privacy {
+    &__list {
+        list-style-type: none;
+        &-item {
+            padding-top: 30px;
+            font-size: 20px;
+            font-weight: 500;
+            span {
+                display: block;
+                margin-top: 10px;
+            }
+            &-title {
+                font-size: 25px;
+                font-weight: 700;
+            }
+            .bold {
+                font-weight: 700;
+            }
+        }
+    }
+    &__sublist {
+        list-style-type: none;
+        padding-left: 50px;
+        &-item {
+            margin-top: 10px;
+        }
+    }
+}
