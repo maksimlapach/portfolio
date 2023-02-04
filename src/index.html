@@ -95,7 +95,7 @@
                         <a href="#portfolio">МОЇ РОБОТИ</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#">КОНТАКТИ</a>
+                        <a href="#contacts">КОНТАКТИ</a>
                     </li>
                 </ul>
             </nav>
@@ -429,7 +429,7 @@
         </div>
     </div>
 
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -460,18 +460,17 @@
                         </a>
                     </div>
                     <div class="title title_fz14 contacts__text">Або залиште ваші дані і я сама вам напишу:</div>
-
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input required name="name" id="name" type="text">
+                            <input required name="name" type="text">
                             <label for="name">Ваше ім'я</label>
                         </div>
                         <div class="contacts__input">
-                            <input required name="email" id="email" type="email">
+                            <input required name="email" type="email">
                             <label for="email">Ваша пошта</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" id="textarea"></textarea>
+                            <textarea name="text" type="text"></textarea>
                             <label for="textarea">Ваше повідомлення</label>
                         </div>
                         <div class="contacts__triggers">
@@ -486,7 +485,12 @@
             </div>
         </div>
     </div>
+    
+    <div class="pageup">
+        <img src="icons/caret-up-solid.svg" alt="up">
+    </div>
 
+    <script src="jquery/jquery-3.6.3.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

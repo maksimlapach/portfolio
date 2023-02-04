@@ -1,0 +1,13 @@
+.pageup {
+    display: none;
+    position: relative;
+    img {
+        position: fixed;
+        right: 100px;
+        bottom: 100px;
+        width: 100px;
+        height: 100px; 
+        cursor: pointer;
+    }
+    
+}
