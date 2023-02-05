@@ -23,6 +23,14 @@ percents.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
+const menulink = document.querySelectorAll('.menu__link');
+
+menulink.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+    })
+});
+
 
 //Scroll up
 $(window).scroll(function() {

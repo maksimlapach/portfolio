@@ -24,6 +24,7 @@
         }
         ul {
             list-style-type: none;
+            margin-bottom: 0;
             li {
                 position: relative;
                 &:after {
@@ -43,7 +44,7 @@
         &::before {
             content: '';
             position: absolute;
-            top: 63px;
+            top: 55px;
             left: -8px;
             height: 1px;
             width: 51px;
@@ -57,7 +58,7 @@
         &-head {
             position: relative;
             padding-left: 100px;
-            padding-top: 45px;
+            padding-top: 37px;
         }
         &-body {
             padding-left: 43px;
