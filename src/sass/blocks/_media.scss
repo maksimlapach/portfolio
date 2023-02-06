@@ -37,6 +37,35 @@
             grid-template-columns: 265px 35px;
         }
     }
+    .portfolio {
+        &__wrapper {
+            justify-content: center;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, 280px);
+        }
+        &__item {
+            &:nth-child(3) {
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding-right: 0;
+            padding-left: 0;
+            grid-template-columns: 400px 540px;
+        }
+        &__form {
+            gap: 20px;
+            grid-template-columns: repeat(2, 260px);
+        }
+    }
+    .pageup {
+        img {
+            right: 70px;
+            bottom: 70px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -81,6 +110,14 @@
         }
         &__item {
             grid-template-columns: 310px 35px;
+        }
+    }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
         }
     }
 }
@@ -137,8 +174,24 @@
     }
     .progress {
         padding-top: 80px;
-        &__item {
-            grid-template-columns: 220px 35px;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: center;
+        }
+    }
+    .portfolio {
+        padding-top: 80px;
+        &__wrapper {
+            gap: 20px;
+        }
+    }
+    .contacts {
+        padding-top: 80px;
+    }
+    .pageup {
+        img {
+            right: 40px;
+            bottom: 40px;
         }
     }
 }
@@ -215,6 +268,47 @@
         &__item {
             justify-content: center;
             grid-template-columns: 265px 35px;
+        }
+    }
+    .portfolio {
+        padding-top: 40px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+    .contacts {
+        padding: 40px 0 50px 0;
+        &__descr {
+            justify-self: center;
+        }
+        &__form {
+            grid-template-columns: 300px;
+            grid-template-rows: 45px 45px 143px 101px;
+            gap: 25px;
+        }
+        &__textarea {
+            grid-column: unset; 
+            grid-row: unset;
+        }
+        &__triggers {
+            grid-template-columns: 300px;
+            grid-column: unset;
+        }
+        &__btn {
+            grid-row: 5 / 6;
+            color: #000;
+        }
+        &__privacy {
+            justify-self: center;
+            width: 196px;
+        }
+    }
+    .pageup {
+        img {
+            right: 30px;
+            bottom: 30px;
+            width: 40px;
+            height: 40px;
         }
     }
 }

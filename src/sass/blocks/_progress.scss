@@ -3,7 +3,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 70px);
+        grid-template-rows: repeat(2, minmax(70px, auto));
         column-gap: 45px;
         row-gap: 30px;
     }

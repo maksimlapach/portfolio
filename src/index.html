@@ -143,7 +143,15 @@
         <div class="container">
             <div class="aboutme__wrapper">
                 <div class="aboutme__photo">
-                    <img src="img/main_photo.jpg" alt="my_photo">
+                    <!-- <img srcset="img/main_photo-min.jpg 300w, img/main_photo.jpg 400w" 
+                    sizes="(max-width: 576px) 280px,
+                            (min-width: 577px) 390px" 
+                         src="img/main_photo.jpg" alt="my_photo"> -->
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/main_photo/main_photo-min.webp">
+                        <source media="(min-width: 577px)" srcset="img/main_photo/main_photo.webp">
+                        <img src="img/main_photo/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="aboutme__descr">
                     <h2 class="title title_fz16 title_block-title">Про мене</h2>
@@ -356,7 +364,7 @@
         </div>
     </div>
 
-    <!-- <div class="portfolio" id="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title_block-title-center">Портфоліо</h2>
             <div class="title title_fz36 title_block-subtitle-center">Мої роботи</div>
@@ -374,48 +382,9 @@
                 </a>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="price">
-        <div class="container">
-            <h2 class="title title_fz16 title_block-title-center">Прайс-лист</h2>
-            <div class="divider"></div>
-            <div class="price__wrapper">
-                <div class="price__item">
-                    <div class="title title_fz14 price__item-title">Landing-page</div>
-                    <div class="title title_fz14 price__item-cost">от 8000 руб.</div>
-                    <div class="price__item-descr">Одностраничный сайт для презентации услуг/товаров/...</div>
-                </div>
-                <div class="price__item">
-                    <div class="title title_fz14 price__item-title">Корпоративный сайт</div>
-                    <div class="title title_fz14 price__item-cost">от 20000 руб.</div>
-                    <div class="price__item-descr">Сайт для вашего бизнеса или компании</div>
-                </div>
-                <div class="price__item">
-                    <div class="title title_fz14 price__item-title">Интернет-магазин</div>
-                    <div class="title title_fz14 price__item-cost">от 30000 руб.</div>
-                    <div class="price__item-descr">Инструмент для ваших продаж в сети</div>
-                </div>
-                <div class="price__item">
-                    <div class="title title_fz14 price__item-title">Web-приложение</div>
-                    <div class="title title_fz14 price__item-cost">от 28000 руб.</div>
-                    <div class="price__item-descr">Приложение внутри браузера для лучшего комфорта</div>
-                </div>
-                <div class="price__item">
-                    <div class="title title_fz14 price__item-title">Android/IOS Приложение</div>
-                    <div class="title title_fz14 price__item-cost">от 25000 руб.</div>
-                    <div class="price__item-descr">Приложение для смартфона любой ОС</div>
-                </div>
-                <div class="price__item">
-                    <div class="title title_fz14 price__item-title">Дизайн</div>
-                    <div class="title title_fz14 price__item-cost">Индивидуально</div>
-                    <div class="price__item-descr">Создам дизайн для вашего сайта/приложения...</div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="contacts" id="contacts">
+    <div class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -470,11 +439,11 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     
-    <!-- <div class="pageup">
+    <div class="pageup">
         <img src="icons/caret-up-solid.svg" alt="up">
-    </div> -->
+    </div>
 
     <script src="jquery/jquery-3.6.3.min.js"></script>
     <script src="js/script.js"></script>
