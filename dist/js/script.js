@@ -2,7 +2,9 @@ const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       closeMenu = document.querySelector('.menu__close'),
       overlay = document.querySelector('.menu__overlay'),
-      pageup =  document.querySelector('.pageup');
+      pageUp =  document.querySelector('.pageup'),
+      promo = document.querySelector('.promo'),
+      hamburgerSpan = document.querySelectorAll('.hamburger span');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -33,13 +35,25 @@ menulink.forEach(item => {
 
 
 //Scroll up
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1600) {
-        $('.pageup').fadeIn();
+const promoHeight = promo.offsetHeight;
+
+document.addEventListener('scroll', () => {
+    if(window.scrollY > 1600) {
+        pageUp.style.display = 'block';
     } else {
-        $('.pageup').fadeOut();
+        pageUp.style.display = 'none';
     }
-});
-pageup.addEventListener('click', () => {
+    if(window.scrollY > promoHeight - 20) {
+        hamburgerSpan.forEach(item => {
+            item.style.background = '#000';
+        });
+    } else {
+        hamburgerSpan.forEach(item => {
+            item.style.background = '#FFF';
+        });
+    }
+})
+
+pageUp.addEventListener('click', () => {
     window.scrollTo(0,0);
 });
